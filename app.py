@@ -9,7 +9,7 @@ from tensorflow.keras.applications.inception_v3 import preprocess_input
 import re
 
 # Load the model
-model = tf.keras.models.load_model('caption_model.h5')
+model = tf.keras.models.load_model('models/caption_model.h5')
 
 # Load tokenizer (you'll need to adapt this to your actual tokenizer loading)
 # Replace with your actual tokenizer loading

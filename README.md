@@ -10,3 +10,7 @@ pinned: false
 ---
 
 Check out the configuration reference at https://huggingface.co/docs/hub/spaces-config-reference
+
+
+Model trained on flickr8k : ResNet + LSTM
+on coco2017 (using 8k images) : CLIP + GPT2
