@@ -27,6 +27,7 @@ def preprocess_image(image_path):
 def extract_image_features(model, image_path):
     img = preprocess_image(image_path)
     features = model.predict(img, verbose=0)
+    features = features.flatten()
     return features
 
 #Inception Model - CNN
