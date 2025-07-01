@@ -9,7 +9,10 @@ from tensorflow.keras.applications.inception_v3 import preprocess_input
 import re
 
 # Load the model
-model = tf.keras.models.load_model('models/caption_model.h5')
+def NotEqual(x):
+    return tf.not_equal(x, 0)
+
+model = tf.keras.models.load_model('models/caption_model.h5', custom_objects={'NotEqual': NotEqual})
 
 # Load tokenizer (you'll need to adapt this to your actual tokenizer loading)
 # Replace with your actual tokenizer loading
